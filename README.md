@@ -8,8 +8,7 @@ The intention of this process is to allow for the batch generation of unit cards
 
 |Unit Card|
 |------|
-|![Unit Card] ![#peasant_crossbowmen](https://user-images.githubusercontent.com/113598098/192801968-1f6cd209-e8c6-4666-8ef8-6b37e42711fa.png)
-  |
+|[#peasant_crossbowmen](https://user-images.githubusercontent.com/113598098/192801968-1f6cd209-e8c6-4666-8ef8-6b37e42711fa.png)|
 
 NOTE: This is not a tutorial, simply just instructions and tips to render out an image used for portraits.
 
