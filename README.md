@@ -97,27 +97,27 @@ The posing/rendering tab is where unit poses are defined via the pink reference 
 
 Here is a list of pose groups based on keyframe number:
 
-`-1 = T-Pose
+`-1 = T-Pose`
 
-0 = Standing base
+`0 = Standing base`
 
-1/199 = unit (alone)
+`1/199 = unit (alone)`
 
-200/299 = horse mounted unit
+`200/299 = horse mounted unit`
 
-300/349 = elephant mounted unit
+`300/349 = elephant mounted unit`
 
-350/399 = camel mounted unit
+`350/399 = camel mounted unit`
 
-400/449 = chariots & other animals (dogs, pig)
+`400/449 = chariots & other animals (dogs, pig)`
 
-450/499 = /
+`450/499 = /`
 
-500/599 = warmachines
+`500/599 = warmachines`
 
-600/699 = naval/boats
+`600/699 = naval/boats`
 
-700/799 = agents`
+`700/799 = agents`
 
 The groups are defined by a change in position of the camera. For example the camera will be closer for a single human unit portrait than for an elephant mounted unit portrait.
 
