@@ -19,7 +19,7 @@ The intention of this process is to allow for the batch generation of unit cards
 
 
 
-NOTE: This is not a tutorial, simply just instructions and tips to render out an image used for portraits.
+NOTE: This is not a tutorial, simply just instructions and tips to render out a batch of images used for portraits.
 
 ## Provided Files
 
