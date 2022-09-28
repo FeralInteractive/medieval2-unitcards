@@ -1,6 +1,5 @@
-# medieval2-unitcards
 
-# Blender Portrait Scene
+# Medieval 2 Blender Portrait Scene README
 
 ## Introduction
 
