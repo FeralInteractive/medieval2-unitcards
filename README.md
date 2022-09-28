@@ -69,51 +69,88 @@ The sheet can be found here
 
 This is the sheet that contains assignments for each portrait(models,textures, factions, poses etc). This information is copied to the inputfile.txt. See details below on how each column of the google sheet works.
 
-![portrait_spreadsheet_doc_resize](https://user-images.githubusercontent.com/113598098/192820233-20631a64-db97-4dea-8348-42ec03a11436.png)
+![portrait_spreadsheet_doc_resize](https://user-images.githubusercontent.com/113598098/192826608-c6be508c-c22f-486e-8969-66440e442a37.png)
+
 
 
 When looking to control the variation of a particular unit for a portrait, use the 'visible_models' section of the sheet. (scroll right on the 'main sheet')
+![portrait_spreadsheet_visible_models](https://user-images.githubusercontent.com/113598098/192822075-778fef86-11c4-4ac9-a499-76398ee92c13.png)
 
-![portrait_spreadsheet_visible_models](https://user-images.githubusercontent.com/113598098/192820896-894bbd8c-3fee-4774-9e79-5ba3af476802.png)
 
- When a unit's assignments are complete, copy the relevant rows into the inputfile.txt document.
+
+When unit assignments are complete, copy the relevant rows into the inputfile.txt document.
+<img width="1865" alt="spreadsheet example" src="https://user-images.githubusercontent.com/113598098/192823281-c69ec624-cabd-4d35-aa24-fe84e508b002.PNG">
+
+
+<img width="1001" alt="Input Text File Example" src="https://user-images.githubusercontent.com/113598098/192822408-bc922aa6-d229-4da9-bb7b-fea68c7fce4b.PNG">
+
+
 
 ### 2) Posing
 
 Open the 'M2_Portrait_Creator_scene.blend'.
 
-The posing/rendering tab is where unit poses are defined via the reference character. Scrubbing through the timeline represents all the existing poses. 
+<img width="1920" alt="InitialFileopen" src="https://user-images.githubusercontent.com/113598098/192827038-cfcc8f9a-b5c9-4d2d-8fda-1eaf35254d6b.PNG">
+
+
+The posing/rendering tab is where unit poses are defined via the pink reference character. Scrubbing through the timeline represents all the existing poses. 
 
 Here is a list of pose groups based on keyframe number:
 
--1 = T-Pose
+`-1 = T-Pose
+
 0 = Standing base
 
 1/199 = unit (alone)
+
 200/299 = horse mounted unit
+
 300/349 = elephant mounted unit
+
 350/399 = camel mounted unit
+
 400/449 = chariots & other animals (dogs, pig)
+
 450/499 = /
+
 500/599 = warmachines
+
 600/699 = naval/boats
-700/799 = agents
 
-The groups are defined by change in position of the camera. For example the camera will be closer for a single human unit portrait than for an elephant mounted unit portrait.
+700/799 = agents`
+
+The groups are defined by a change in position of the camera. For example the camera will be closer for a single human unit portrait than for an elephant mounted unit portrait.
+
+Additional functionality you may want to make use of includes weapon references that can be enabled in the outliner and reference images that can be added to the camera.
+
+Outliner with Weapon References             |  Shield Reference in Viewport
+:-------------------------:|:-------------------------:
+<img width="375" alt="WeaponReferenceOutliner" src="https://user-images.githubusercontent.com/113598098/192836376-d230290d-452e-4032-b608-d27e14b05df1.PNG">  |  <img width="373" alt="WeaponReferenceViewport" src="https://user-images.githubusercontent.com/113598098/192835506-798d9dff-0856-4f7a-b800-6ca1d3bd1184.PNG">
 
 
-Weapon references can be enabled in the outliner.
 
 
-A reference image can be added to the camera. 
+
+
+
+
+
+
 
 
 Additional assets (animals,siege engines) can be found in the outliner. Ensure visibility for animals is enabled but the Additional assets group visibility is disabled prior to running the script tool. 
 
 
+
+
 Enter pose mode and manipulate the joints to create a new pose. Auto key is on by default. Note manipulating the joints on a frame which already has a pose will overwrite the existing pose! Recommended behaviour - Select an empty frame within one of the ranges listed above (dependent on type of unit) or select a frame outside the range (799+).
 
 The camera's position can also be changed via keyframe animation. Beware manipulating the camera position in any of the ranges listed above as these are positioned specifically for the relevant unit types.
+
+If a new pose is added, you may want to consider updating the Pose Library sheet.
+
+![portrait_spreadsheet_doc_poses](https://user-images.githubusercontent.com/113598098/192829082-8e5e5a8c-99db-4de0-b8b8-be1affd0f1c5.png)
+
 
 
 ### 3) Running the script tool
