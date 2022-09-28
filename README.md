@@ -42,6 +42,7 @@ The sheet can be found here
 
 This is the sheet that contains assignments for each portrait(models,textures, factions, poses etc). This information is copied to the inputfile.txt. See details below on how each column of the google sheet works. When a unit's assignments are complete, copy the relevant rows into the inputfile.txt document.
 
+
 ### 2) Posing
 
 Open the 'M2_Portrait_Creator_scene.blend'.
@@ -72,7 +73,7 @@ Weapon references can be enabled in the outliner.
 A reference image can be added to the camera. 
 
 
-Additional assets (animals,siege engines) can be found in the outliner. Ensure visibility for animals is enabled but the Additional assets group vision is disabled prior to the rendering stage. 
+Additional assets (animals,siege engines) can be found in the outliner. Ensure visibility for animals is enabled but the Additional assets group visibility is disabled prior to running the script tool. 
 
 
 Enter pose mode and manipulate the joints to create a new pose. Auto key is on by default. Note manipulating the joints on a frame which already has a pose will overwrite the existing pose! Recommended behaviour - Select an empty frame within one of the ranges listed above (dependent on type of unit) or select a frame outside the range (799+).
@@ -91,6 +92,25 @@ By default the tool will read ‘inputfile.txt’ for the input file, draw 'unit
 Before running the script it is recommended you navigate to 'Window' and 'Toggle System Console'. This allows visibility of the scripts progress as well as highlighting any errors.
 
 When running the script if you encounter an error, before restarting the script navigate to the posing/rendering tab. Notice a character model is present below the camera. Under the ‘Characters’ collection - delete the models and armature. Now restart the script.
+
+
+### 4) Updating in game portraits
+
+Convert the output .png files to .tga. (Recommend using use [Magick plugin](https://imagemagick.org/script/download.php)
+
+Simply update the file in game (if replacing an existing asset) or add the file to the relevant directory (if producing for a mod).
+
+**Portrait game directories**
+  * Game Directories
+    * **BASE** - `...\data\ui\units`
+    * **Americas** - `...\mods\americas\data\ui\units`
+    * **Britannia** - `...\mods\british_isles\data\ui\units`
+    * **Crusades** - `...\mods\crusades\data\ui\units`
+    * **Teutonic** - `...\mods\teutonic\data\ui\units`
+
+  
+
+
 
 
 
