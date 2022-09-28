@@ -38,14 +38,28 @@ You can find the project root folder here:
     * Input text file utilised by the python script to generate unit cards with specified models, textures, poses and factions. Contains a single unit entry as an example. 
 
 
-Note: Source assets have not been provided. However a folder structure has been provided for easy interaction with the portrait_creator.py script. The portrait_creator.py script expects a ‘.dae’ format for models and ‘.png’ format for texture files.
+
+<img width="512" alt="Master_Directory" src="https://user-images.githubusercontent.com/113598098/192818635-eaf6e6ba-27fc-4c9d-b686-793790e3f473.PNG">
+
+
+
+NOTE: Source assets have not been provided. However a folder structure has been provided for easy interaction with the portrait_creator.py script. The portrait_creator.py script expects a ‘.dae’ format for models and ‘.png’ format for texture files.
 
 
 ## Preparing Assets
 
 When preparing models for use with the portrait creator ensure the assigned material for main character elements (body, arms, legs etc) is named ‘characterlod0__main’. Ensure the assigned material for attachment elements (swords, shields, sheaths etc) is ‘characterlod0__attach’.
 
+
+<img width="327" alt="characterlod0_main" src="https://user-images.githubusercontent.com/113598098/192818994-d147dab5-2ae8-409d-b622-5b6686f1b8eb.PNG">   <img width="322" alt="characterlod0_attach" src="https://user-images.githubusercontent.com/113598098/192819035-357e77d8-0ea0-49ab-9a17-3dbba9b21393.PNG">
+
+
+
 When exporting a .dae model file, ensure the file name includes ‘_lod0’ at the end of the model name. E.g. ‘en_peasant_crossbowmen_lod0.dae’
+
+
+
+
 
 ## How to create a portrait
 
@@ -53,8 +67,16 @@ When exporting a .dae model file, ensure the file name includes ‘_lod0’ at t
 
 The sheet can be found here
 
-This is the sheet that contains assignments for each portrait(models,textures, factions, poses etc). This information is copied to the inputfile.txt. See details below on how each column of the google sheet works. When a unit's assignments are complete, copy the relevant rows into the inputfile.txt document.
+This is the sheet that contains assignments for each portrait(models,textures, factions, poses etc). This information is copied to the inputfile.txt. See details below on how each column of the google sheet works.
 
+![portrait_spreadsheet_doc_resize](https://user-images.githubusercontent.com/113598098/192820233-20631a64-db97-4dea-8348-42ec03a11436.png)
+
+
+When looking to control the variation of a particular unit for a portrait, use the 'visible_models' section of the sheet. (scroll right on the 'main sheet')
+
+![portrait_spreadsheet_visible_models](https://user-images.githubusercontent.com/113598098/192820896-894bbd8c-3fee-4774-9e79-5ba3af476802.png)
+
+ When a unit's assignments are complete, copy the relevant rows into the inputfile.txt document.
 
 ### 2) Posing
 
