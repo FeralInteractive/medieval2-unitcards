@@ -109,7 +109,7 @@ When running the script if you encounter an error, before restarting the script 
 
 ### 4) Updating in game portraits
 
-Convert the output .png files to .tga. (Recommend using [Magick plugin](https://imagemagick.org/script/download.php)
+Convert the output .png files to .tga. (Recommend using [Magick plugin](https://imagemagick.org/script/download.php))
 
 Simply update the file in game (if replacing an existing asset) or add the file to the relevant directory (if producing for a mod).
 
