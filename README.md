@@ -4,11 +4,11 @@
 ## Introduction
 
 This document reviews the blender file and accompanying Portrait Creator.py script provided to the modding community.
-The intention of this process is to allow for the batch generation of unit cards for Total War: MEDIEVAL II. 
+The intention of this process is to allow for the batch generation of unit cards for Total War: MEDIEVAL II.
 
-|Unit Card|
-|------|
-|[#peasant_crossbowmen](https://user-images.githubusercontent.com/113598098/192801968-1f6cd209-e8c6-4666-8ef8-6b37e42711fa.png)|
+![#peasant_crossbowmen](https://user-images.githubusercontent.com/113598098/192802488-fb666976-f868-4445-a419-41149e37ac49.png)
+
+
 
 NOTE: This is not a tutorial, simply just instructions and tips to render out an image used for portraits.
 
