@@ -6,6 +6,11 @@
 This document reviews the blender file and accompanying Portrait Creator.py script provided to the modding community.
 The intention of this process is to allow for the batch generation of unit cards for Total War: MEDIEVAL II. 
 
+|Unit Card|
+|------|
+|![Unit Card![#peasant_crossbowmen](https://user-images.githubusercontent.com/113598098/192801246-03179537-6e8f-4e1e-b725-954b8437dc89.png)
+]|
+
 NOTE: This is not a tutorial, simply just instructions and tips to render out an image used for portraits.
 
 ## Provided Files
@@ -25,7 +30,7 @@ You can find the project root folder here:
     * Input text file utilised by the python script to generate unit cards with specified models, textures, poses and factions. Contains a single unit entry as an example. 
 
 
-Note: Source assets have not been provided. However a folder structure has been provided for easy interaction with the portrait_creator.py script.. The portrait_creator.py script expects a ‘.dae’ format for models and ‘.png’ format for texture files.
+Note: Source assets have not been provided. However a folder structure has been provided for easy interaction with the portrait_creator.py script. The portrait_creator.py script expects a ‘.dae’ format for models and ‘.png’ format for texture files.
 
 
 ## Preparing Assets
@@ -96,7 +101,7 @@ When running the script if you encounter an error, before restarting the script 
 
 ### 4) Updating in game portraits
 
-Convert the output .png files to .tga. (Recommend using use [Magick plugin](https://imagemagick.org/script/download.php)
+Convert the output .png files to .tga. (Recommend using [Magick plugin](https://imagemagick.org/script/download.php)
 
 Simply update the file in game (if replacing an existing asset) or add the file to the relevant directory (if producing for a mod).
 
