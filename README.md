@@ -43,12 +43,12 @@ You can find the project root folder here:
 
 
 
-NOTE: Source assets have not been provided. However a folder structure has been provided for easy interaction with the portrait_creator.py script. The portrait_creator.py script expects a ‘.dae’ format for models and ‘.png’ format for texture files.
+NOTE: Source assets have not been provided. However a folder structure has been provided for easy interaction with the portrait_creator.py script. The portrait_creator.py script expects a *‘.dae’* format for models and *‘.png’* format for texture files.
 
 
 ## Preparing Assets
 
-When preparing models for use with the portrait creator ensure the assigned material for main character elements (body, arms, legs etc) is named ‘characterlod0__main’. Ensure the assigned material for attachment elements (swords, shields, sheaths etc) is ‘characterlod0__attach’.
+When preparing models for use with the portrait creator ensure the assigned material for main character elements (body, arms, legs etc) is named _‘characterlod0__main’_. Ensure the assigned material for attachment elements (swords, shields, sheaths etc) is named ‘characterlod0__attach’.
 
 
 <img width="327" alt="characterlod0_main" src="https://user-images.githubusercontent.com/113598098/192818994-d147dab5-2ae8-409d-b622-5b6686f1b8eb.PNG">   <img width="322" alt="characterlod0_attach" src="https://user-images.githubusercontent.com/113598098/192819035-357e77d8-0ea0-49ab-9a17-3dbba9b21393.PNG">
@@ -74,7 +74,9 @@ This is the sheet that contains assignments for each portrait(models,textures, f
 
 
 When looking to control the variation of a particular unit for a portrait, use the 'visible_models' section of the sheet. (scroll right on the 'main sheet')
-![portrait_spreadsheet_visible_models](https://user-images.githubusercontent.com/113598098/192822075-778fef86-11c4-4ac9-a499-76398ee92c13.png)
+
+![portrait_spreadsheet_visible_models](https://user-images.githubusercontent.com/113598098/192996532-2eca7eb2-0460-4366-a46e-01b99d261578.png)
+
 
 
 
@@ -124,8 +126,9 @@ The groups are defined by a change in position of the camera. For example the ca
 Additional functionality you may want to make use of includes weapon references that can be enabled in the outliner and reference images that can be added to the camera.
 
 Outliner with Weapon References             |  Shield Reference in Viewport
-:-------------------------:|:-------------------------:
-<img width="375" alt="WeaponReferenceOutliner" src="https://user-images.githubusercontent.com/113598098/192836376-d230290d-452e-4032-b608-d27e14b05df1.PNG">  |  <img width="373" alt="WeaponReferenceViewport" src="https://user-images.githubusercontent.com/113598098/192835506-798d9dff-0856-4f7a-b800-6ca1d3bd1184.PNG">
+:-------------------------:|:-------------------------:|:--------------------|
+<img width="375" alt="WeaponReferenceOutliner" src="https://user-images.githubusercontent.com/113598098/192836376-d230290d-452e-4032-b608-d27e14b05df1.PNG">  |  <img width="373" alt="WeaponReferenceViewport" src="https://user-images.githubusercontent.com/113598098/192835506-798d9dff-0856-4f7a-b800-6ca1d3bd1184.PNG">  |   <img width="320" alt="Camerareference" src="https://user-images.githubusercontent.com/113598098/192997586-d5830470-b0d7-4b4f-b7f6-263208757136.PNG">
+
 
 
 Enter pose mode and manipulate the joints to create a new pose. Auto key is on by default. Note manipulating the joints on a frame which already has a pose will overwrite the existing pose! Recommended action - Select an empty frame within one of the ranges listed above (dependent on type of unit) or select a frame outside the range (799+).
