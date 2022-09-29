@@ -66,7 +66,7 @@ When exporting a `.dae` model file, ensure the file name includes _‘_lod0’_ 
 
 ### 1) Assignments in the Google Sheet
 
-The sheet can be found [here]([url](https://docs.google.com/spreadsheets/d/1k1u6FZlU2NwpVpSLFyJOOWlLZKi5YOvBQ2RjgB4cRus/edit?usp=sharing)
+The sheet can be found [here](https://docs.google.com/spreadsheets/d/1k1u6FZlU2NwpVpSLFyJOOWlLZKi5YOvBQ2RjgB4cRus/edit?usp=sharing)
 
 This is the sheet that contains assignments for each portrait(models,textures, factions, poses etc). This information is copied to the `inputfile.txt`. See details below on how each column of the google sheet works.
 
