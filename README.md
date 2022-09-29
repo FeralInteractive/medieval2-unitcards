@@ -43,19 +43,19 @@ You can find the project root folder here:
 
 
 
-NOTE: Source assets have not been provided. However a folder structure has been provided for easy interaction with the portrait_creator.py script. The portrait_creator.py script expects a *‘.dae’* format for models and *‘.png’* format for texture files.
+NOTE: Source assets have not been provided. However a folder structure has been provided for easy interaction with the `portrait_creator.py` script. The `portrait_creator.py` script expects a *‘.dae’* format for models and *‘.png’* format for texture files.
 
 
 ## Preparing Assets
 
-When preparing models for use with the portrait creator ensure the assigned material for main character elements (body, arms, legs etc) is named _‘characterlod0__main’_. Ensure the assigned material for attachment elements (swords, shields, sheaths etc) is named ‘characterlod0__attach’.
+When preparing models for use with the portrait creator ensure the assigned material for main character elements (body, arms, legs etc) is named _‘characterlod0__main’_. Ensure the assigned material for attachment elements (swords, shields, sheaths etc) is named _‘characterlod0__attach’_.
 
 
 <img width="327" alt="characterlod0_main" src="https://user-images.githubusercontent.com/113598098/192818994-d147dab5-2ae8-409d-b622-5b6686f1b8eb.PNG">   <img width="322" alt="characterlod0_attach" src="https://user-images.githubusercontent.com/113598098/192819035-357e77d8-0ea0-49ab-9a17-3dbba9b21393.PNG">
 
 
 
-When exporting a .dae model file, ensure the file name includes ‘_lod0’ at the end of the model name. E.g. ‘en_peasant_crossbowmen_lod0.dae’
+When exporting a .dae model file, ensure the file name includes _‘_lod0’_ at the end of the model name. E.g. `en_peasant_crossbowmen_lod0.dae`.
 
 
 
@@ -65,22 +65,22 @@ When exporting a .dae model file, ensure the file name includes ‘_lod0’ at t
 
 ### 1) Assignments in the Google Sheet
 
-The sheet can be found here
+The sheet can be found [here]([url](https://docs.google.com/spreadsheets/d/1k1u6FZlU2NwpVpSLFyJOOWlLZKi5YOvBQ2RjgB4cRus/edit?usp=sharing))
 
-This is the sheet that contains assignments for each portrait(models,textures, factions, poses etc). This information is copied to the inputfile.txt. See details below on how each column of the google sheet works.
+This is the sheet that contains assignments for each portrait(models,textures, factions, poses etc). This information is copied to the `inputfile.txt`. See details below on how each column of the google sheet works.
 
 ![portrait_spreadsheet_doc_resize](https://user-images.githubusercontent.com/113598098/192826608-c6be508c-c22f-486e-8969-66440e442a37.png)
 
 
 
-When looking to control the variation of a particular unit for a portrait, use the 'visible_models' section of the sheet. (scroll right on the 'main sheet')
+When looking to control the variation of a particular unit for a portrait, use the _'visible_models'_ section of the sheet. (scroll right on the _'main'_ sheet)
 
 ![portrait_spreadsheet_visible_models](https://user-images.githubusercontent.com/113598098/192996532-2eca7eb2-0460-4366-a46e-01b99d261578.png)
 
 
 
 
-When unit assignments are complete, copy the relevant rows into the inputfile.txt document.
+When unit assignments are complete, copy the relevant rows into the `inputfile.txt` document.
 <img width="1865" alt="spreadsheet example" src="https://user-images.githubusercontent.com/113598098/192823281-c69ec624-cabd-4d35-aa24-fe84e508b002.PNG">
 
 
@@ -90,7 +90,7 @@ When unit assignments are complete, copy the relevant rows into the inputfile.tx
 
 ### 2) Posing
 
-Open the 'M2_Portrait_Creator_scene.blend'.
+Open the `M2_Portrait_Creator_scene.blend`.
 
 <img width="1920" alt="InitialFileopen" src="https://user-images.githubusercontent.com/113598098/192827038-cfcc8f9a-b5c9-4d2d-8fda-1eaf35254d6b.PNG">
 
@@ -125,13 +125,13 @@ The groups are defined by a change in position of the camera. For example the ca
 
 Additional functionality you may want to make use of includes weapon references that can be enabled in the outliner and reference images that can be added to the camera.
 
-Outliner with Weapon References             |  Shield Reference in Viewport
-:-------------------------:|:-------------------------:|:--------------------|
+Outliner with Weapon References     |  Shield Reference in Viewport   |    Camera reference
+:-------------------------:|:-------------------------:|:----------------------:
 <img width="375" alt="WeaponReferenceOutliner" src="https://user-images.githubusercontent.com/113598098/192836376-d230290d-452e-4032-b608-d27e14b05df1.PNG">  |  <img width="373" alt="WeaponReferenceViewport" src="https://user-images.githubusercontent.com/113598098/192835506-798d9dff-0856-4f7a-b800-6ca1d3bd1184.PNG">  |   <img width="320" alt="Camerareference" src="https://user-images.githubusercontent.com/113598098/192997586-d5830470-b0d7-4b4f-b7f6-263208757136.PNG">
 
 
 
-Enter pose mode and manipulate the joints to create a new pose. Auto key is on by default. Note manipulating the joints on a frame which already has a pose will overwrite the existing pose! Recommended action - Select an empty frame within one of the ranges listed above (dependent on type of unit) or select a frame outside the range (799+).
+Enter pose mode and manipulate the joints to create a new pose. Auto key is on by default. Manipulating the joints on a frame which already has a pose will overwrite the existing pose! Recommended action - Select an empty frame within one of the ranges listed above (dependent on type of unit) or select a frame outside the range (799+).
 
 The camera's position can also be changed via keyframe animation. Beware manipulating the camera position in any of the ranges listed above as these are positioned specifically for the relevant unit types.
 
@@ -147,27 +147,27 @@ Navigate to the Run Tool (scripting) tab.
 
 <img width="1693" alt="ScriptScreen" src="https://user-images.githubusercontent.com/113598098/192972469-fb06fe87-5b56-42fa-ac9e-d430950e8856.PNG">
 
-Select ‘Open’ at the top of the screen and open the ‘portrait_creator.py’.
+Select _‘Open’_ at the top of the screen and open the `portrait_creator.py`.
 
 <img width="297" alt="SelectOpen" src="https://user-images.githubusercontent.com/113598098/192977355-8dd7d28c-e162-454a-9820-da98d3113ae5.PNG">
 <img width="1022" alt="Open Script" src="https://user-images.githubusercontent.com/113598098/192977382-acd050f4-a060-4911-8477-cd8dfbaa265f.PNG">
 
-By default the tool will read ‘inputfile.txt’ for the input file, draw 'unit data' from the 'source assets' folder and its relevant subdirectories. The ‘output_directory’ folder is set as the path for the image render output. These paths can be changed if desired. See image below for details. The script includes comments explaining the process if you require more information.
+By default the tool will read `inputfile.txt` for the input file, draw _'unit data'_ from the _'source assets'_ folder and its relevant subdirectories. The _‘output_directory’_ folder is set as the path for the image render output. These paths can be changed if desired. See image below for details. The script includes comments explaining the process if you require more information.
 
 <img width="743" alt="SETUP" src="https://user-images.githubusercontent.com/113598098/192980254-a0f369e2-7dc3-4440-801c-e4e904e3db65.PNG">
 
 
-Before running the script it is recommended you navigate to 'Window' and 'Toggle System Console'. This allows visibility of the scripts progress as well as highlighting any errors.
+Before running the script it is recommended you navigate to _'Window'_ and _'Toggle System Console'_. This allows visibility of the scripts progress as well as highlighting any errors.
 
 <img width="910" alt="togglesystemconsole1" src="https://user-images.githubusercontent.com/113598098/192980449-08f5d6ce-eaa1-4af4-9e9a-4bff0eaacffc.PNG">
 <img width="672" alt="InProgressSystemConsole" src="https://user-images.githubusercontent.com/113598098/192981170-2f9994e0-3d0c-4d92-a659-e20d2e503b6f.PNG">
 
 
-Run the script by selecting the 'Run Script' button at the top of the screen.
+Run the script by selecting the _'Run Script'_ button at the top of the screen.
 
 <img width="781" alt="RunScript" src="https://user-images.githubusercontent.com/113598098/192983107-cc6b0367-2010-4ab8-b43f-ed0d1d6764f6.PNG">
 
-When running the script if you encounter an error, before restarting the script navigate to the posing/rendering tab. Notice a character model is present below the camera. Under the ‘Characters’ collection - delete the models and armature. Now restart the script.
+When running the script if you encounter an error, before restarting the script navigate to the posing/rendering tab. Notice a character model is present below the camera. Under the _‘Characters’_ collection - delete the models and armature. Now restart the script.
 
 <img width="1413" alt="DELETETHIS" src="https://user-images.githubusercontent.com/113598098/192981279-b108473e-4433-48a3-b724-6193ba191feb.PNG">
 
@@ -175,7 +175,7 @@ When running the script if you encounter an error, before restarting the script 
 
 ### 4) Updating in game portraits
 
-Convert the output .png files to .tga. (Recommend using [Magick plugin](https://imagemagick.org/script/download.php))
+Convert the output `.png` files to `.tga.` (Recommend using [Magick plugin](https://imagemagick.org/script/download.php))
 
 <img width="239" alt="mogrifyformat" src="https://user-images.githubusercontent.com/113598098/192984302-2ac6ed66-369e-4175-a860-4f40aafde25d.PNG">
 
@@ -186,7 +186,7 @@ Simply update the file in game (if replacing an existing asset) or add the file 
   * Game Directories
     * **BASE** - `...\data\ui\units`
     * **Americas** - `...\mods\americas\data\ui\units`
-    * **Britannia** - `...\mods\british_isles\data\ui\units`
+    * **Britannia** - `...\mods\british_isles\data\ui\units`    
     * **Crusades** - `...\mods\crusades\data\ui\units`
     * **Teutonic** - `...\mods\teutonic\data\ui\units`
 
