@@ -128,22 +128,7 @@ Outliner with Weapon References             |  Shield Reference in Viewport
 <img width="375" alt="WeaponReferenceOutliner" src="https://user-images.githubusercontent.com/113598098/192836376-d230290d-452e-4032-b608-d27e14b05df1.PNG">  |  <img width="373" alt="WeaponReferenceViewport" src="https://user-images.githubusercontent.com/113598098/192835506-798d9dff-0856-4f7a-b800-6ca1d3bd1184.PNG">
 
 
-
-
-
-
-
-
-
-
-
-
-Additional assets (animals,siege engines) can be found in the outliner. Ensure visibility for animals is enabled but the Additional assets group visibility is disabled prior to running the script tool. 
-
-
-
-
-Enter pose mode and manipulate the joints to create a new pose. Auto key is on by default. Note manipulating the joints on a frame which already has a pose will overwrite the existing pose! Recommended behaviour - Select an empty frame within one of the ranges listed above (dependent on type of unit) or select a frame outside the range (799+).
+Enter pose mode and manipulate the joints to create a new pose. Auto key is on by default. Note manipulating the joints on a frame which already has a pose will overwrite the existing pose! Recommended action - Select an empty frame within one of the ranges listed above (dependent on type of unit) or select a frame outside the range (799+).
 
 The camera's position can also be changed via keyframe animation. Beware manipulating the camera position in any of the ranges listed above as these are positioned specifically for the relevant unit types.
 
@@ -157,13 +142,27 @@ If a new pose is added, you may want to consider updating the Pose Library sheet
 
 Navigate to the Run Tool (scripting) tab.
 
+<img width="1693" alt="ScriptScreen" src="https://user-images.githubusercontent.com/113598098/192972469-fb06fe87-5b56-42fa-ac9e-d430950e8856.PNG">
+
 Select ‘Open’ at the top of the screen and open the ‘portrait_creator.py’.
+<img width="297" alt="SelectOpen" src="https://user-images.githubusercontent.com/113598098/192977355-8dd7d28c-e162-454a-9820-da98d3113ae5.PNG">
+<img width="1022" alt="Open Script" src="https://user-images.githubusercontent.com/113598098/192977382-acd050f4-a060-4911-8477-cd8dfbaa265f.PNG">
 
 By default the tool will read ‘inputfile.txt’ for the input file, draw 'unit data' from the 'source assets' folder and its relevant subdirectories. The ‘output_directory’ folder is set as the path for the image render output. These paths can be changed if desired. See image below for details. The script includes comments explaining the process if you require more information.
 
+<img width="743" alt="SETUP" src="https://user-images.githubusercontent.com/113598098/192980254-a0f369e2-7dc3-4440-801c-e4e904e3db65.PNG">
+
+
 Before running the script it is recommended you navigate to 'Window' and 'Toggle System Console'. This allows visibility of the scripts progress as well as highlighting any errors.
 
+<img width="910" alt="togglesystemconsole1" src="https://user-images.githubusercontent.com/113598098/192980449-08f5d6ce-eaa1-4af4-9e9a-4bff0eaacffc.PNG">
+<img width="672" alt="InProgressSystemConsole" src="https://user-images.githubusercontent.com/113598098/192981170-2f9994e0-3d0c-4d92-a659-e20d2e503b6f.PNG">
+
+
 When running the script if you encounter an error, before restarting the script navigate to the posing/rendering tab. Notice a character model is present below the camera. Under the ‘Characters’ collection - delete the models and armature. Now restart the script.
+
+<img width="1413" alt="DELETETHIS" src="https://user-images.githubusercontent.com/113598098/192981279-b108473e-4433-48a3-b724-6193ba191feb.PNG">
+
 
 
 ### 4) Updating in game portraits
