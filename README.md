@@ -55,7 +55,7 @@ When preparing models for use with the portrait creator ensure the assigned mate
 
 
 
-When exporting a .dae model file, ensure the file name includes _‘_lod0’_ at the end of the model name. E.g. `en_peasant_crossbowmen_lod0.dae`.
+When exporting a _'.dae'_ model file, ensure the file name includes _‘_lod0’_ at the end of the model name. E.g. `en_peasant_crossbowmen_lod0.dae`.
 
 
 
@@ -80,7 +80,9 @@ When looking to control the variation of a particular unit for a portrait, use t
 
 
 
-When unit assignments are complete, copy the relevant rows into the `inputfile.txt` document.
+When unit assignments are complete, copy the relevant rows from the google sheet into the `inputfile.txt` document.
+
+
 <img width="1865" alt="spreadsheet example" src="https://user-images.githubusercontent.com/113598098/192823281-c69ec624-cabd-4d35-aa24-fe84e508b002.PNG">
 
 
@@ -171,6 +173,10 @@ When running the script if you encounter an error, before restarting the script 
 
 <img width="1413" alt="DELETETHIS" src="https://user-images.githubusercontent.com/113598098/192981279-b108473e-4433-48a3-b724-6193ba191feb.PNG">
 
+
+After the script is complete, navigate to the designated output directory. The portraits will be split into subdirectories dependant on game (Base, Americas, British Isles, Crusades, Teutonic) and then by faction.
+
+<img width="1086" alt="OutputPNGS" src="https://user-images.githubusercontent.com/113598098/193011683-288c1457-b7dc-4575-83ad-e6accb35f222.PNG">
 
 
 ### 4) Updating in game portraits
