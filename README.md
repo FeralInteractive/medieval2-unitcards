@@ -182,7 +182,7 @@ After the script is complete, navigate to the designated output directory. The p
 
 ### 4) Updating in game portraits
 
-Convert the output `.png` files to `.tga` (Solutions include using [Magick plugin](https://imagemagick.org/script/download.php) or [Texconv](https://github.com/Microsoft/DirectXTex/wiki/Texconv)).
+Convert the output `.png` files to `.tga` (Solutions include using [ImageMagick](https://imagemagick.org/script/download.php) or [Texconv](https://github.com/Microsoft/DirectXTex/wiki/Texconv)).
 
 
 
