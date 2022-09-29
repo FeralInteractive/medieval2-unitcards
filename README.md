@@ -37,7 +37,9 @@ You can find the project root folder here:
 * Inputfile.txt
     * Input text file utilised by the python script to generate unit cards with specified models, textures, poses and factions. Contains a single unit entry as an example. 
 
-
+* logfile.txt
+    * this file is generated when running the script. The Blender system console will direct users to this file when encountering an error. Provides specific information on which lines of the input file are causing an error.
+    *
 
 <img width="512" alt="Master_Directory" src="https://user-images.githubusercontent.com/113598098/192818635-eaf6e6ba-27fc-4c9d-b686-793790e3f473.PNG">
 
