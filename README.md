@@ -44,7 +44,7 @@ You can find the project root folder [here](https://github.com/FeralInteractive/
 
 
 
-NOTE: Source assets have not been provided. However a folder structure has been provided for easy interaction with the `portrait_creator.py` script. The `portrait_creator.py` script expects a *‘.dae’* format for models and *‘.png’* format for texture files.
+NOTE: Source assets have not been provided. However a folder structure has been provided for easy interaction with the `portrait_creator.py` script. The `portrait_creator.py` script expects a `.dae` format for models and `.png` format for texture files.
 
 
 ## Preparing Assets
@@ -56,7 +56,7 @@ When preparing models for use with the portrait creator ensure the assigned mate
 
 
 
-When exporting a _'.dae'_ model file, ensure the file name includes _‘_lod0’_ at the end of the model name. E.g. `en_peasant_crossbowmen_lod0.dae`.
+When exporting a `.dae` model file, ensure the file name includes _‘_lod0’_ at the end of the model name. E.g. `en_peasant_crossbowmen_lod0.dae`.
 
 
 
@@ -124,7 +124,7 @@ Here is a list of pose groups based on keyframe number:
 
 `700/799 = agents`
 
-The groups are defined by a change in position of the camera. For example the camera will be closer for a single human unit portrait than for an elephant mounted unit portrait.
+The groups are defined by a change in position of the camera. For example the camera will be closer for a single human unit portrait than for a mounted elephant unit portrait.
 
 Additional functionality you may want to make use of includes weapon references that can be enabled in the outliner and reference images that can be added to the camera.
 
@@ -187,7 +187,7 @@ Convert the output `.png` files to `.tga.` (Recommend using [Magick plugin](http
 <img width="239" alt="mogrifyformat" src="https://user-images.githubusercontent.com/113598098/192984302-2ac6ed66-369e-4175-a860-4f40aafde25d.PNG">
 
 
-Simply update the file in game (if replacing an existing asset) or add the file to the relevant directory (if producing for a mod).
+Simply update the file in game with the new `.tga` (if replacing an existing asset) or add the file to the relevant directory (if producing for a mod).
 
 **Portrait game directories**
   * Game Directories
