@@ -145,6 +145,7 @@ Navigate to the Run Tool (scripting) tab.
 <img width="1693" alt="ScriptScreen" src="https://user-images.githubusercontent.com/113598098/192972469-fb06fe87-5b56-42fa-ac9e-d430950e8856.PNG">
 
 Select ‘Open’ at the top of the screen and open the ‘portrait_creator.py’.
+
 <img width="297" alt="SelectOpen" src="https://user-images.githubusercontent.com/113598098/192977355-8dd7d28c-e162-454a-9820-da98d3113ae5.PNG">
 <img width="1022" alt="Open Script" src="https://user-images.githubusercontent.com/113598098/192977382-acd050f4-a060-4911-8477-cd8dfbaa265f.PNG">
 
@@ -159,6 +160,10 @@ Before running the script it is recommended you navigate to 'Window' and 'Toggle
 <img width="672" alt="InProgressSystemConsole" src="https://user-images.githubusercontent.com/113598098/192981170-2f9994e0-3d0c-4d92-a659-e20d2e503b6f.PNG">
 
 
+Run the script by selecting the 'Run Script' button at the top of the screen.
+
+<img width="781" alt="RunScript" src="https://user-images.githubusercontent.com/113598098/192983107-cc6b0367-2010-4ab8-b43f-ed0d1d6764f6.PNG">
+
 When running the script if you encounter an error, before restarting the script navigate to the posing/rendering tab. Notice a character model is present below the camera. Under the ‘Characters’ collection - delete the models and armature. Now restart the script.
 
 <img width="1413" alt="DELETETHIS" src="https://user-images.githubusercontent.com/113598098/192981279-b108473e-4433-48a3-b724-6193ba191feb.PNG">
@@ -169,6 +174,9 @@ When running the script if you encounter an error, before restarting the script 
 
 Convert the output .png files to .tga. (Recommend using [Magick plugin](https://imagemagick.org/script/download.php))
 
+<img width="239" alt="mogrifyformat" src="https://user-images.githubusercontent.com/113598098/192984302-2ac6ed66-369e-4175-a860-4f40aafde25d.PNG">
+
+
 Simply update the file in game (if replacing an existing asset) or add the file to the relevant directory (if producing for a mod).
 
 **Portrait game directories**
@@ -178,6 +186,10 @@ Simply update the file in game (if replacing an existing asset) or add the file 
     * **Britannia** - `...\mods\british_isles\data\ui\units`
     * **Crusades** - `...\mods\crusades\data\ui\units`
     * **Teutonic** - `...\mods\teutonic\data\ui\units`
+
+
+![ingame_screenshot](https://user-images.githubusercontent.com/113598098/192988367-bdd595a2-00cf-4681-b7dc-b0812767cf50.jpg)
+
 
   
 
