@@ -23,7 +23,7 @@ NOTE: This is not a tutorial, simply just instructions and tips to render out a 
 
 ## Provided Files
 
-You can find the project root folder here:
+You can find the project root folder [here](https://github.com/FeralInteractive/medieval2-unitcards/blob/main/Mobile_Portrait_Creator(Github).zip):
 
 * M2_Portrait_Creator_scene.blend
    * This is a base blender scene that can be used to create and render unit cards.
@@ -39,7 +39,6 @@ You can find the project root folder here:
 
 * logfile.txt
     * this file is generated when running the script. The Blender system console will direct users to this file when encountering an error. Provides specific information on which lines of the input file are causing an error.
-    *
 
 <img width="512" alt="Master_Directory" src="https://user-images.githubusercontent.com/113598098/192818635-eaf6e6ba-27fc-4c9d-b686-793790e3f473.PNG">
 
