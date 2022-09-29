@@ -182,9 +182,9 @@ After the script is complete, navigate to the designated output directory. The p
 
 ### 4) Updating in game portraits
 
-Convert the output `.png` files to `.tga.` (Recommend using [Magick plugin](https://imagemagick.org/script/download.php))
+Convert the output `.png` files to `.tga` (Solutions include using [Magick plugin](https://imagemagick.org/script/download.php) or [Texconv](https://github.com/Microsoft/DirectXTex/wiki/Texconv)).
 
-<img width="239" alt="mogrifyformat" src="https://user-images.githubusercontent.com/113598098/192984302-2ac6ed66-369e-4175-a860-4f40aafde25d.PNG">
+
 
 
 Simply update the file in game with the new `.tga` (if replacing an existing asset) or add the file to the relevant directory (if producing for a mod).
