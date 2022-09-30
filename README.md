@@ -5,7 +5,7 @@
 ## Introduction
 
 This document reviews the blender file and accompanying Portrait Creator.py script provided to the modding community.
-The intention of this process is to allow for the batch generation of unit cards for Total War: MEDIEVAL II.
+The intention of this process is to allow for the batch generation of unit portrait cards for Total War: MEDIEVAL II. 
 
 ![#peasant_crossbowmen](https://user-images.githubusercontent.com/113598098/192804638-93e18d75-fde9-4834-ab15-5fb5614bf07f.png) ![#chivalric_knights](https://user-images.githubusercontent.com/113598098/192813112-94f081e2-f04b-4e60-a553-5ec04190d5da.png) ![#arquebusiers](https://user-images.githubusercontent.com/113598098/192813903-c85a1715-6fce-433a-81fc-69ead077ce94.png) ![#dismounted_broken_lances](https://user-images.githubusercontent.com/113598098/192814103-0f67bfe8-cc14-4a42-9e04-8cf710c47948.png)![#coyote_priests](https://user-images.githubusercontent.com/113598098/192814945-d244ab9c-357a-450d-9bb4-008853476930.png) ![#dismounted_latinkon](https://user-images.githubusercontent.com/113598098/192815404-a0ebe441-984a-4b7b-b9ab-3097916af541.png)
 
@@ -29,22 +29,31 @@ You can find the project root folder [here](https://github.com/FeralInteractive/
    * This is a base blender scene that can be used to create and render unit cards.
    * This scene was created using Blender version 2.93.0. The scene has been used in Blender versions 2.93.0, 3.0.0, 3.3.0.
 
+* M2_Portrait_Creator_scene - unit_info.blend
+   * This is a base blender scene that can be used to create and render full unit cards for use in the unit_info folder.
+   * This scene was created using Blender version 3.3.0. The scene has been used in Blender versions 3.3.0.
+
 
 * Portrait_creator.py
-    * This is a python script Blender uses to produce portraits and save them to a specified directory.
+    * This is a python script Blender uses to produce unit portraits and save them to a specified directory.
 
+* Portrait_creator-unit_info.py
+    * This is a python script Blender uses to produce full unit portraits and save them to a specified directory.
 
 * Inputfile.txt
     * Input text file utilised by the python script to generate unit cards with specified models, textures, poses and factions. Contains a single unit entry as an example. 
 
 * logfile.txt
-    * this file is generated when running the script. The Blender system console will direct users to this file when encountering an error. Provides specific information on which lines of the input file are causing an error.
+    * This file is generated when running the script. The Blender system console will direct users to this file when encountering an error. Provides specific information on which lines of the input file are causing an error.
+
+* Source Assets folder
+    * Source Assets folder broken down into 'models' and 'textures' subfolders. The 'models' subfolder contains an 'animal', 'human' and 'siege_engines' s   
 
 <img width="512" alt="Master_Directory" src="https://user-images.githubusercontent.com/113598098/192818635-eaf6e6ba-27fc-4c9d-b686-793790e3f473.PNG">
 
 
 
-NOTE: Source assets have not been provided. However a folder structure has been provided for easy interaction with the `portrait_creator.py` script. The `portrait_creator.py` script expects a `.dae` format for models and `.dds` format for texture files.
+NOTE: Source assets have not been provided (exception being materials for an example unit). However a folder structure has been provided for easy interaction with the `portrait_creator.py` script. The `portrait_creator.py` script expects a `.dae` format for models and `.dds` format for texture files.
 
 
 ## Preparing Assets
