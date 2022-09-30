@@ -47,13 +47,13 @@ You can find the project root folder [here](https://github.com/FeralInteractive/
     * This file is generated when running the script. The Blender system console will direct users to this file when encountering an error. Provides specific information on which lines of the input file are causing an error.
 
 * Source Assets folder
-    * Source Assets folder broken down into 'models' and 'textures' subfolders. The 'models' subfolder contains an 'animal', 'human' and 'siege_engines' s   
+    * Source Assets folder broken down into 'models' and 'textures' subfolders.Source assets have not been provided (exception being materials for an example unit). However a folder structure has been provided for easy interaction with the `portrait_creator.py` script. The `portrait_creator.py` script expects a `.dae` format for models and `.dds` format for texture files. See below for breakdown of folders and where models and textures should be placed to avoid errors.
 
 <img width="512" alt="Master_Directory" src="https://user-images.githubusercontent.com/113598098/192818635-eaf6e6ba-27fc-4c9d-b686-793790e3f473.PNG">
 
+![SourceAssetFolderLayout](https://user-images.githubusercontent.com/113598098/193277435-79aadca2-3f59-4a70-9042-ec99258785df.png)
 
-
-NOTE: Source assets have not been provided (exception being materials for an example unit). However a folder structure has been provided for easy interaction with the `portrait_creator.py` script. The `portrait_creator.py` script expects a `.dae` format for models and `.dds` format for texture files.
+![SourceAssetFolderLayoutTextures](https://user-images.githubusercontent.com/113598098/193277461-aadbc061-a735-45ab-9389-24c3396482e9.png)
 
 
 ## Preparing Assets
@@ -102,7 +102,7 @@ When unit assignments are complete, copy the relevant rows from the google sheet
 
 ### 2) Posing
 
-Open the `M2_Portrait_Creator_scene.blend`.
+Open the `M2_Portrait_Creator_scene.blend` file.
 
 <img width="1920" alt="InitialFileopen" src="https://user-images.githubusercontent.com/113598098/192827038-cfcc8f9a-b5c9-4d2d-8fda-1eaf35254d6b.PNG">
 
@@ -212,10 +212,48 @@ Simply update the file in game with the new `.tga` (if replacing an existing ass
 
  
  
- NOTES: The `portrait_creator.py` does contain limited, disabled and ultimately unfinished functionality for rendering fuller portrait images for _'unit_info'_ images. If this is an area that you would be interested in looking in to and working on we accept pull requests
+
+### 5) unit_info portrait creator
+
+The process for unit_info portrait cards remains mostly the same as the process for the unit portrait cards covered above. The differences revolve around the presence of an environment in the scene and a change in camera position.
+
+Open the `portrait_creator_scene_unit_info.blend` file.
+
+<img width="1918" alt="FullPortraitScene" src="https://user-images.githubusercontent.com/113598098/193279688-1cd67720-82ef-42b2-9e03-b6efdea2c101.PNG">
+
+
+
+The main differences in this scene are the presence of a simple environment and a change in camera position. The outliner on the left of the screen lists the environment objects under the _'Camera_Scenes'_ collection. The Camera is keyed in one position over a range of 0-200 frames. The position is just in front of the reference character and can be altered to your liking. The poses for the reference character exist as they did in the standard scene file.
+
+
+<img width="333" alt="EnvironmentOutliner" src="https://user-images.githubusercontent.com/113598098/193291842-4ab4a316-582e-4193-9d05-77506b91420a.PNG">
+
+<img width="995" alt="CameraPosition" src="https://user-images.githubusercontent.com/113598098/193291859-47eb0f52-a99b-484a-9aec-1de9741c477c.PNG">
+
+Textures for the environment objects can be found in `\source_assets\textures\props`.
+
+When ready to process a portrait. Navigate to the _'Run Tool (Scripting)'_ tab and slect _'Open'_. Select the `portrait_creator - unit_info.py` script. The only differences between this script and the previously used version is that this enables visibility of the environment during rendering and outputs to the `\unit_info` directory.
+
+<img width="1639" alt="RunToolUnitInfo" src="https://user-images.githubusercontent.com/113598098/193293661-15e6f57e-79fc-419d-9968-800f9127e2d1.PNG">
 
 
 
 
+Convert the output `.png` files to `.tga` (Solutions include using [ImageMagick](https://imagemagick.org/script/download.php) or [Texconv](https://github.com/Microsoft/DirectXTex/wiki/Texconv)).
+
+
+
+To update the file in game with the new `.tga` (if replacing an existing asset) or add the file to the relevant directory (if producing for a mod).
+
+**Portrait game directories**
+  * Game Directories
+    * **BASE** - `...\data\ui\units_info`
+    * **Americas** - `...\mods\americas\data\ui\units_info`
+    * **Britannia** - `...\mods\british_isles\data\ui\units_info`    
+    * **Crusades** - `...\mods\crusades\data\ui\units_info`
+    * **Teutonic** - `...\mods\teutonic\data\ui\units_info`
+
+
+![#peasant_crossbowmen](https://user-images.githubusercontent.com/113598098/193296750-27f8e5b4-0be3-4f8c-a206-92cb544cc682.png)
 
 
