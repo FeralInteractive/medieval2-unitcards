@@ -25,29 +25,29 @@ NOTE: This is not a tutorial, simply just instructions and tips to render out a 
 
 You can find the project root folder [here](https://github.com/FeralInteractive/medieval2-unitcards/blob/main/Mobile_Portrait_Creator(Github).zip):
 
-* M2_Portrait_Creator_scene.blend
+* `**M2_Portrait_Creator_scene.blend**`
    * This is a base blender scene that can be used to create and render unit cards.
    * This scene was created using Blender version 2.93.0. The scene has been used in Blender versions 2.93.0, 3.0.0, 3.3.0.
 
-* M2_Portrait_Creator_scene - unit_info.blend
+* `**M2_Portrait_Creator_scene - unit_info.blend**`
    * This is a base blender scene that can be used to create and render full unit cards for use in the unit_info folder.
    * This scene was created using Blender version 3.3.0. The scene has been used in Blender versions 3.3.0.
 
 
-* Portrait_creator.py
+* `**Portrait_creator.py**`
     * This is a python script Blender uses to produce unit portraits and save them to a specified directory.
 
-* Portrait_creator-unit_info.py
+* `**Portrait_creator-unit_info.py**`
     * This is a python script Blender uses to produce full unit portraits and save them to a specified directory.
 
-* Inputfile.txt
+* `**Inputfile.txt**`
     * Input text file utilised by the python script to generate unit cards with specified models, textures, poses and factions. Contains a single unit entry as an example. 
 
-* logfile.txt
+* `**logfile.txt**`
     * This file is generated when running the script. The Blender system console will direct users to this file when encountering an error. Provides specific information on which lines of the input file are causing an error.
 
-* Source Assets folder
-    * Source Assets folder broken down into 'models' and 'textures' subfolders.Source assets have not been provided (exception being materials for an example unit). However a folder structure has been provided for easy interaction with the `portrait_creator.py` script. The `portrait_creator.py` script expects a `.dae` format for models and `.dds` format for texture files. See below for breakdown of folders and where models and textures should be placed to avoid errors.
+* `**Source Assets folder**`
+    * '_source_assets_' folder broken down into 'models' and 'textures' subfolders. Source assets from Total War: Medieval II have not been provided (exception being materials for an example unit). However a folder structure has been provided for easy interaction with the `portrait_creator.py` script. The `portrait_creator.py` script expects a `.dae` format for models and `.dds` format for texture files. See below for breakdown of folders and where models and textures should be placed to avoid errors. Simple environment textures for use in the ‘M2_Portrait_Creator_scene - unit_info.blend’ have been provided.
 
 <img width="512" alt="Master_Directory" src="https://user-images.githubusercontent.com/113598098/192818635-eaf6e6ba-27fc-4c9d-b686-793790e3f473.PNG">
 
@@ -65,7 +65,7 @@ When preparing models for use with the portrait creator ensure the assigned mate
 
 
 
-When exporting a `.dae` model file, ensure the file name includes _‘_lod0’_ at the end of the model name. E.g. `en_peasant_crossbowmen_lod0.dae`.
+When exporting a `.dae` model file, ensure the file name includes _`_lod0`_ at the end of the model name. E.g. `en_peasant_crossbowmen_lod0.dae`.
 
 
 
