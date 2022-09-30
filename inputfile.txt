@@ -1,1 +1,0 @@
-1866	#peasant_crossbowmen	base	milan	43	/	/	peasant_crossbowmen	EN_Peasant_Padded_milan	EN_Peasant_Padded_normal	Final European CB Gun_milan_diff	Final European CB Gun_milan_norm	milan															
