@@ -44,7 +44,7 @@ You can find the project root folder [here](https://github.com/FeralInteractive/
 
 
 
-NOTE: Source assets have not been provided. However a folder structure has been provided for easy interaction with the `portrait_creator.py` script. The `portrait_creator.py` script expects a `.dae` format for models and `.png` format for texture files.
+NOTE: Source assets have not been provided. However a folder structure has been provided for easy interaction with the `portrait_creator.py` script. The `portrait_creator.py` script expects a `.dae` format for models and `.dds` format for texture files.
 
 
 ## Preparing Assets
@@ -201,8 +201,9 @@ Simply update the file in game with the new `.tga` (if replacing an existing ass
 ![ingame_screenshot](https://user-images.githubusercontent.com/113598098/192988367-bdd595a2-00cf-4681-b7dc-b0812767cf50.jpg)
 
 
-  
-
+ 
+ 
+ NOTES: The `portrait_creator.py` does contain limited, disabled and ultimately unfinished functionality for rendering fuller portrait images for _'unit_info'_ images. If this is an area that you would be interested in looking in to and working on we accept pull requests
 
 
 
