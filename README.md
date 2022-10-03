@@ -40,7 +40,7 @@ You can find the project root folder [here](https://github.com/FeralInteractive/
 * `Portrait_creator-unit_info.py`
     * This is a python script Blender uses to produce full unit portraits and save them to a specified directory.
 
-* `**Inputfile.txt**`
+* `Inputfile.txt`
     * Input text file utilised by the python script to generate unit cards with specified models, textures, poses and factions. Contains a single unit entry as an example. 
 
 * `logfile.txt`
