@@ -439,7 +439,7 @@ def render(portrait, camera,):
     # Close up camera render output
     if camera.name.endswith('closeup'):
         bpy.data.collections["render_camera_full_environment"].hide_render = False
-        bpy.data.collections["render_camera_closeup_environment"].hide_render = False
+        bpy.data.collections["render_camera_closeup_environment"].hide_render = True
         rendered = portrait.game + '/unit_info/' + portrait.output_directory + '/' + portrait.portrait_file_output
 
     scene.render.filepath = os.path.join(output_renders_path, rendered)
