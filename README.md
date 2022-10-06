@@ -23,7 +23,7 @@ NOTE: This is not a tutorial, simply just instructions and tips to render out a 
 
 ## Provided Files
 
-You can find the project root folder [here](https://github.com/FeralInteractive/medieval2-unitcards/blob/main/Mobile_Portrait_Creator(Github).zip):
+You can find the project root folder [here](https://github.com/FeralInteractive/medieval2-unitcards/tree/main/Mobile_Portrait_Creator_):
 
 * `M2_Portrait_Creator_scene.blend`
    * This is a base blender scene that can be used to create and render unit cards.
