@@ -47,7 +47,7 @@ You can find the project root folder [here](https://github.com/FeralInteractive/
     * This file is generated when running the script. The Blender system console will direct users to this file when encountering an error. Provides specific information on which lines of the input file are causing an error.
 
 * `Source Assets folder`
-    * '_source_assets_' folder broken down into 'models' and 'textures' subfolders. Source assets from Total War: Medieval II have not been provided (exception being materials for an example unit). However a folder structure has been provided for easy interaction with the `portrait_creator.py` script. The `portrait_creator.py` script expects a `.dae` format for models and `.dds` format for texture files. See below for breakdown of folders and where models and textures should be placed to avoid errors. Simple environment textures for use in the ‘M2_Portrait_Creator_scene - unit_info.blend’ have been provided.
+    * '_source_assets_' folder broken down into 'models' and 'textures' subfolders. Source assets from Total War: Medieval II have not been provided (exception being materials for an example unit). However a folder structure has been provided for easy interaction with the `portrait_creator.py` script. The `portrait_creator.py` script expects a `.dae` format for models and `.dds` format for texture files. See below for breakdown of folders and where models and textures should be placed to avoid errors. Simple environment textures for use in the `M2_Portrait_Creator_scene - unit_info.blend` have been provided.
 
 <img width="512" alt="Master_Directory" src="https://user-images.githubusercontent.com/113598098/192818635-eaf6e6ba-27fc-4c9d-b686-793790e3f473.PNG">
 
