@@ -99,6 +99,7 @@ When unit assignments are complete, copy the relevant rows from the google sheet
 <img width="1001" alt="Input Text File Example" src="https://user-images.githubusercontent.com/113598098/192822408-bc922aa6-d229-4da9-bb7b-fea68c7fce4b.PNG">
 
 
+NOTE: The portrait creator scripts expect the input file data to be presented as it appears when copied and pasted from the google sheet. If the data is laid out differently then it is possible entries will be skipped. If data is entered through different means and entries are being skipped then a workaround is to ensure there is a 'tabbed' space at the end of each entry. 
 
 ### 2) Posing
 
