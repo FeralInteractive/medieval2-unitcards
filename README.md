@@ -4,6 +4,10 @@
 
 ## Introduction
 
+Total War: Medieval 2 was recently released on the [iOS AppStore](https://apps.apple.com/app/apple-store/id1477203766?pt=13002&ct=UnitCardTool&mt=8) and [GooglePlay](https://play.google.com/store/apps/details?id=com.feralinteractive.medieval2_android&referrer=utm_source%3DUnitCardTool) stores. As part of the mobile release we updated the user interface, including upgrading unit cards to new, higher resolutions versions.
+
+As the mobile version of the game is a direct port of the desktop, the tool used to generate unit cards also works for the desktop assets. We have therefore documented and released the Blender file and scripts so that modders can use this tool in their projects — making a usually time-consuming task much more efficient.
+
 This document reviews the blender file and accompanying Portrait Creator.py script provided to the modding community.
 The intention of this process is to allow for the batch generation of unit portrait cards for Total War: MEDIEVAL II. 
 
